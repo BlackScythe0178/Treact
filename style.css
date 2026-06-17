@@ -944,33 +944,33 @@ MOBILE RESPONSIVENESS ↓
     }
 }
 
-    /* VALUES SECTION */
+/* VALUES SECTION */
 
-    .values__description,
-    .values__img {
+.values__description,
+.values__img {
         width: 100%;
-    }
+}
 
-    .value__list {
-        flex-direction: column;
-        gap: 32px;
-    }
+.value__list {
+    flex-direction: column;
+    gap: 32px;
+}
 
-    .value {
-        width: 100%;
-    }
+.value {
+width: 100%;
+}
 
-    #testimonials .row {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+#testimonials .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    .testimonials__img {
-        width: 45%;
-    }
+.testimonials__img {
+    width: 45%;
+}
 
-    .testimonials__description {
-        padding-left: 0;
-        margin-top: 48px;
+.testimonials__description {
+    padding-left: 0;
+    margin-top: 48px;
 }
