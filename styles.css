@@ -496,11 +496,7 @@ VALUES ↓
     max-width: 500px;
 }
 
-/*
-
-PRICING ↓
-
-*/
+/* PRICING ↓ */
 
 
 #pricing .row {
@@ -548,9 +544,11 @@ PRICING ↓
     background: linear-gradient(135deg, #4c51bf, #667eea);
 }
 
-.plan--featured h3,
-.plan--featured h4,
-.plan--featured p {
+.plan--featured .plan__middle h5 {
+    color: #243e63;
+}
+
+.plan--featured .plan__middle p {
     color: white;
 }
 
@@ -566,25 +564,31 @@ PRICING ↓
 }
 
 .plan__top {
-    padding: 32px;
+    padding: 40px 32px;
 }
 
-.plan__top p {
-    margin-top: 8px;
-}
 
 .plan__middle {
-    padding: 32px;
+    padding: 40px 32px;
     border-top: 1px solid #e5e7eb;
     border-bottom: 1px solid #e5e7eb;
 }
 
+.plan__middle h5 {
+    margin-bottom: 24px;
+    font-size: 18px;
+    font-weight: 800;
+}
+
 .plan__middle p {
-    gap: 8px;
+    margin-top: 16px;
+    color: #4b4b4b;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .plan__bottom {
-    padding: 32px;
+    padding: 40px 32px;
 }
 
 .plan:first-child {
@@ -915,6 +919,23 @@ MOBILE RESPONSIVENESS ↓
 
 /* MOBILE RESPONSIVENESS */
 
+/* MOBILE RESPONSIVENESS */
+
+.btn__menu {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 32px;
+    color: #243e63;
+}
+
+.nav__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 @media (max-width: 1200px) {
     .links {
         display: none;
@@ -925,10 +946,23 @@ MOBILE RESPONSIVENESS ↓
     }
 }
 
+@media (max-width: 1024px) {
+    .plans {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 64px;
+    }
+
+    .plan {
+        width: 100%;
+        max-width: 420px;
+        min-width: 0;
+    }
+}
+
 @media (max-width: 768px) {
     header .row,
-    #quality .row,
-    #values .row,
     #steps .row,
     #testimonials .row {
         flex-direction: column;
@@ -938,6 +972,7 @@ MOBILE RESPONSIVENESS ↓
     #quality .row,
     #values .row {
         flex-direction: column-reverse;
+        align-items: center;
     }
 
     .values__description,
@@ -978,22 +1013,7 @@ MOBILE RESPONSIVENESS ↓
         padding-left: 0;
         margin-top: 48px;
     }
-}
 
-@media (max-width: 768px) {
-    .plans {
-        flex-direction: column;
-        align-items: center;
-        gap: 64px;
-    }
-
-    .plan {
-        width: 100%;
-        max-width: 420px;
-    }
-}
-
-@media (max-width: 768px) {
     .plans {
         display: flex;
         flex-direction: column;
@@ -1006,9 +1026,7 @@ MOBILE RESPONSIVENESS ↓
         max-width: 360px;
         min-width: 0;
     }
-}
 
-@media (max-width: 768px) {
     .start__row {
         flex-direction: column;
         text-align: center;
@@ -1027,44 +1045,54 @@ MOBILE RESPONSIVENESS ↓
         justify-content: center;
         gap: 24px;
     }
-}
 
-@media (max-width: 1024px) {
-    .nav__row .links {
-        display: none !important;
+    .footer__columns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 48px 64px;
+        text-align: center;
     }
 
-    .nav__row .btn__menu {
-        display: block !important;
+    .footer__column {
+        width: calc(33.333% - 48px);
+        min-width: 120px;
     }
 
-    .btn__menu {
-    display: none;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 32px;
-    color: #243e63;
+    .footer__bottom {
+        flex-direction: column;
+        gap: 32px;
+        text-align: center;
     }
 
-    .nav__row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    }
-
-    /* all your normal CSS */
-
-    /* media queries LAST */
-@media (max-width: 1024px) {
-    .links {
-        display: none;
-    }
-
-    .btn__menu {
-        display: block;
+    .footer__socials {
+        justify-content: center;
     }
 }
 
+@media (max-width: 1024px) {
+    .plans {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 64px;
+    }
 
+    .plan {
+        width: 100%;
+        max-width: 420px;
+        min-width: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .footer__columns {
+        gap: 48px 32px;
+    }
+}
+
+    .footer__column {
+        width: calc(33.333% - 24px);
+        min-width: 90px;
+    }
 }
