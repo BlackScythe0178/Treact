@@ -1222,3 +1222,27 @@ MOBILE RESPONSIVENESS ↓
         font-size: 14px;
     }
 }
+
+@media (max-width: 478px) {
+    .footer__columns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px 48px;
+    }
+
+    .footer__column {
+        width: calc(50% - 24px);
+        text-align: center;
+    }
+
+    .footer__column h5 {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+    .footer__column a {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+}
