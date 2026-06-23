@@ -1050,19 +1050,18 @@ MOBILE RESPONSIVENESS ↓
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 48px 64px;
-        text-align: center;
+        gap: 48px 80px;
     }
 
     .footer__column {
-        width: calc(33.333% - 48px);
+        width: calc(100% / 3 - 60px);
         min-width: 120px;
     }
 
     .footer__bottom {
         flex-direction: column;
         gap: 32px;
-        text-align: center;
+        align-items: center;
     }
 
     .footer__socials {
