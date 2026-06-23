@@ -1200,6 +1200,7 @@ MOBILE RESPONSIVENESS ↓
         align-items: center;
         gap: 32px;
     }
+}
 
 @media (max-width: 640px) {
     .footer__columns {
