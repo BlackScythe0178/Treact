@@ -1108,11 +1108,9 @@ MOBILE RESPONSIVENESS ↓
 
 @media (max-width: 768px) {
   header .row,
-  #features .row__narrow,
-  #quality .row,
-  #pricing .row,
-  #testimonials .row,
-  #steps .row {
+  #steps .row,
+  #testimonials .row {
+    flex-direction: column;
     text-align: center;
   }
 
@@ -1123,7 +1121,6 @@ MOBILE RESPONSIVENESS ↓
   .testimonials__img,
   .testimonials__description {
     width: 100%;
-    max-width: 100%;
   }
 
   .header__description {
