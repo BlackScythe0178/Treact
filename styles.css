@@ -1096,3 +1096,85 @@ MOBILE RESPONSIVENESS ↓
         min-width: 90px;
     }
 }
+
+@media (max-width: 768px) {
+  header .row,
+  #features .row__narrow,
+  #quality .row,
+  #pricing .row,
+  #testimonials .row,
+  #steps .row {
+    text-align: center;
+  }
+
+  .header__description,
+  .header__img--wrapper,
+  .section__text,
+  .section__img,
+  .testimonials__img,
+  .testimonials__description {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .header__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__email {
+    width: 100%;
+  }
+
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service {
+    width: 100%;
+    max-width: 360px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .section__text {
+    align-items: center;
+  }
+
+  .plans {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plan {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .steps__list,
+  .step {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .testimonials__description {
+    padding-left: 0;
+  }
+
+  .testimonial__bottom,
+  .testimonial__profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .testimonial__buttons {
+    justify-content: center;
+    margin-top: 24px;
+  }
+}
