@@ -1183,3 +1183,24 @@ MOBILE RESPONSIVENESS ↓
     margin-top: 24px;
   }
 }
+
+@media (max-width: 640px) {
+    .footer__columns {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .footer__column {
+        width: auto;
+        min-width: 0;
+    }
+
+    .footer__column h5 {
+        font-size: 14px;
+    }
+
+    .footer__column a {
+        font-size: 14px;
+    }
+}
