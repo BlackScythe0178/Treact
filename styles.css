@@ -1083,6 +1083,15 @@ MOBILE RESPONSIVENESS ↓
         max-width: 420px;
         min-width: 0;
     }
+    
+    .services {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .service {
+    width: 100%;
+    max-width: 360px;
 }
 
 @media (max-width: 640px) {
